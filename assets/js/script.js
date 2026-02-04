@@ -35,44 +35,82 @@ let carro = {
 
 
 // Laços de repetição
-let text = '';
-for (let indice = 0; indice < 6; indice++) {
-    text += `
-        <h2>Indice: ${indice} - Cor: ${cores[indice]}</h2>
-    `;      
+// let text = '';
+// for (let indice = 0; indice < 6; indice++) {
+//     text += `
+//         <h2>Indice: ${indice} - Cor: ${cores[indice]}</h2>
+//     `;      
 
-    // i++ = 0+1
-}
-exibirResultados('hero', text);
+//     // i++ = 0+1
+// }
 
-text = `<h2>Length= ${cores.length}</h2>`;
-exibirResultados('services', text);
 
-text = `<h2>Trilhas na Web - ${slogan}</h2>`;
-exibirResultados('footer', text);
+// text = `<h2>Length= ${cores.length}</h2>`;
+// exibirResultados('services', text);
 
-// Funções
-function soma(a, b) {
-    return a + b;
-}
+// text = `<h2>Trilhas na Web - ${slogan}</h2>`;
+// exibirResultados('footer', text);
 
-text = `<h2>Resultado da soma: ${soma(2, 3)}</h2>`;
-exibirResultados('about', text);
+// // Funções
+// function soma(a, b) {
+//     return a + b;
+// }
 
-function exibirResultados(element, text) {
-    const inject = document.getElementById(element);
-    if (inject) {
-        inject.innerHTML = text;        
-    }
-}
+// text = `<h2>Resultado da soma: ${soma(2, 3)}</h2>`;
+// exibirResultados('about', text);
 
-function enviarNome() {
-    const nome = document.getElementById('input_name').value;
-    if (nome) {
-        text = `<h2 class="azul">Olá, ${nome}!</h2>`;
-        exibirResultados('hero', text);
-    } else {
-        text = `<h2 class="vermelho">Por favor, digite seu nome.</h2>`;
-        exibirResultados('hero', text);
-    }
-}
+// function exibirResultados(element, text) {
+//     const inject = document.getElementById(element);
+//     if (inject) {
+//         inject.innerHTML = text;        
+//     }
+// }
+
+// function enviarNome() {
+//     const nome = document.getElementById('input_name').value;
+//     if (nome) {
+//         text = `<h2 class="azul">Olá, ${nome}!</h2>`;
+//         exibirResultados('hero', text);
+//     } else {
+//         text = `<h2 class="vermelho">Por favor, digite seu nome.</h2>`;
+//         exibirResultados('hero', text);
+//     }
+// }
+
+
+// let opcao = 'credit_card';
+// let payment = 'credit_card';
+
+// if (opcao == 'credit_card' || payment == 'debit_card') {
+//     text = `Cartão de Crédito`;
+// } else if (opcao == 'debit_card') {
+//     text = `Cartão de Débito`;
+// } else if (opcao == 'pix') {
+//     text = `PIX`;
+// } else {
+//     text = `<h2>Opção inválida</h2>`;
+// }
+
+// exibirResultados('services', text);
+
+// switch (opcao) {
+//     case 'credit_card':
+//         text = `Cartão de Crédito`;
+//         break;
+//     case 'debit_card':
+//         text = `Cartão de Débito`;
+//         break;
+//     case 'pix':
+//         text = `PIX`; 
+//         break;
+//     default:
+//         text = `<h2>Opção inválida</h2>`;
+//         break;
+// }
+// exibirResultados('services', text);
+
+
+let alunos = ['Geovana', 'Tinho', 'Nino'];
+alunos.forEach(function(aluno) {
+   console.log(aluno);
+});
